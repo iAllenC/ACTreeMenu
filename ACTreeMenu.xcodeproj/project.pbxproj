@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9F795BC720609B9600C0EE04 /* ACTreeMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F795BC520609B9600C0EE04 /* ACTreeMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F795BD320609BC700C0EE04 /* PracticeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F795BCD20609BC600C0EE04 /* PracticeCategory.m */; };
+		9F795BD420609BC700C0EE04 /* TreeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F795BCE20609BC600C0EE04 /* TreeMenu.m */; };
+		9F795BD520609BC700C0EE04 /* UIButton+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F795BCF20609BC600C0EE04 /* UIButton+Add.m */; };
+		9F795BD620609BC700C0EE04 /* PracticeCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F795BD020609BC700C0EE04 /* PracticeCategory.h */; };
+		9F795BD720609BC700C0EE04 /* UIButton+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F795BD120609BC700C0EE04 /* UIButton+Add.h */; };
+		9F795BD820609BC700C0EE04 /* TreeMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F795BD220609BC700C0EE04 /* TreeMenu.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F795BC220609B9600C0EE04 /* ACTreeMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ACTreeMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F795BC520609B9600C0EE04 /* ACTreeMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACTreeMenu.h; sourceTree = "<group>"; };
 		9F795BC620609B9600C0EE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F795BCD20609BC600C0EE04 /* PracticeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeCategory.m; sourceTree = "<group>"; };
+		9F795BCE20609BC600C0EE04 /* TreeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeMenu.m; sourceTree = "<group>"; };
+		9F795BCF20609BC600C0EE04 /* UIButton+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Add.m"; sourceTree = "<group>"; };
+		9F795BD020609BC700C0EE04 /* PracticeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeCategory.h; sourceTree = "<group>"; };
+		9F795BD120609BC700C0EE04 /* UIButton+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Add.h"; sourceTree = "<group>"; };
+		9F795BD220609BC700C0EE04 /* TreeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeMenu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,12 @@
 			isa = PBXGroup;
 			children = (
 				9F795BC520609B9600C0EE04 /* ACTreeMenu.h */,
+				9F795BD020609BC700C0EE04 /* PracticeCategory.h */,
+				9F795BCD20609BC600C0EE04 /* PracticeCategory.m */,
+				9F795BD220609BC700C0EE04 /* TreeMenu.h */,
+				9F795BCE20609BC600C0EE04 /* TreeMenu.m */,
+				9F795BD120609BC700C0EE04 /* UIButton+Add.h */,
+				9F795BCF20609BC600C0EE04 /* UIButton+Add.m */,
 				9F795BC620609B9600C0EE04 /* Info.plist */,
 			);
 			path = ACTreeMenu;
@@ -59,7 +77,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F795BD720609BC700C0EE04 /* UIButton+Add.h in Headers */,
+				9F795BD820609BC700C0EE04 /* TreeMenu.h in Headers */,
 				9F795BC720609B9600C0EE04 /* ACTreeMenu.h in Headers */,
+				9F795BD620609BC700C0EE04 /* PracticeCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F795BD420609BC700C0EE04 /* TreeMenu.m in Sources */,
+				9F795BD520609BC700C0EE04 /* UIButton+Add.m in Sources */,
+				9F795BD320609BC700C0EE04 /* PracticeCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +284,7 @@
 				INFOPLIST_FILE = ACTreeMenu/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cpsdna.ACTreeMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.ACTreeMenu;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -280,7 +304,7 @@
 				INFOPLIST_FILE = ACTreeMenu/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cpsdna.ACTreeMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.ACTreeMenu;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
